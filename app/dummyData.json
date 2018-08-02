@@ -1,0 +1,21 @@
+[{
+  "customerID": 1,
+  "flights": "1,2,3",
+  "emailAddress": "test@gmail.com"
+},{
+  "customerID": 2,
+  "flights": "4,5",
+  "emailAddress": "test2@gmail.com"
+},{
+  "customerID": 3,
+  "flights": "1,2,5",
+  "emailAddress": "test3@gmail.com"
+},{
+  "customerID": 4,
+  "flights": "3",
+  "emailAddress": "test4@gmail.com"
+},{
+  "customerID": 5,
+  "flights": "2,3,4,5",
+  "emailAddress": "test5@gmail.com"
+}]
