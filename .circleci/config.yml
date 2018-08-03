@@ -75,7 +75,7 @@ jobs:
               command: |
                 if [[ $CIRCLE_BRANCH == 'master' ]]; then
                     ssh -o "StrictHostKeyChecking=no" docker@35.178.196.240 \
-                    "docker service update --env AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} --env AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} --image docker.io/andspuds/customer-api:$CIRCLE_SHA1 customer-api"
+                    "docker service update --env-add AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} --env-add AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} --image docker.io/andspuds/customer-api:$CIRCLE_SHA1 customer-api"
                 else
                     echo Skipping this step as we are not on 'master' branch
                 fi
