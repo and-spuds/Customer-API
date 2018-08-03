@@ -27,7 +27,7 @@ module.exports = (req, res) => {
     Source: "ewalsh@and.digital" /* required */
   };
 
-  AWS.SES().sendEmail(params, (err, data) => {
+  new AWS.SES().sendEmail(params, (err, data) => {
     if (err) {
       console.log(err, err.stack);
     } else {
