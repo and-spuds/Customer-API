@@ -12,6 +12,7 @@ app.use(pino);
 app.use("/swagger", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.get("/health", require("./routes/health"));
 app.get("/api/:name", require("./routes/api"));
+app.post("/customers", require("./routes/customers"));
 
 // Error handling
 app.use((req, res) => {
